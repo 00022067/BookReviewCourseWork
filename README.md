@@ -1,7 +1,7 @@
-### Group creating
+### Book creating
 
 ## About my aplication:
-This application is a simple manager list for grouping, built using Node.js and Express.js. You can create, update, and delete groups in this application. User interface is very helpful
+This application is a simple manager list for books, built using Node.js and Express.js. You can create, update, and delete books in this application. User interface is very helpful
 
 ## Run app step by step:
 1. Clone repository:
@@ -17,7 +17,6 @@ This application is a simple manager list for grouping, built using Node.js and 
     npm run start or npm run start:watch for watching environment
 
 
-5. Go to http://localhost:5001 to access the application on browser.
 
 ## Application Dependencies:
 The application relies on the following dependencies:
@@ -36,23 +35,23 @@ Install these dependencies using the command:
 - Configuration
 app.config.js: This file extracts the port number specified in the .env file.
 - Controllers
-controller.js: This module defines various functions to manage HTTP requests related to groups within application.
-- MAIN_PAGE: Displays the main page (main.ejs) and retrieves groups from groups.json.
-CREATE_GROUP: Manages the creation of new groups, ensuring no duplicates are added to groups.json.
-UPDATE_GROUP: Modifies existing groups based on their IDs, updating the information stored in groups.json.
-DELETE_GROUP: Removes groups based on their IDs, updating groups.json accordingly.
+controller.js: This module defines various functions to manage HTTP requests related to books within application.
+- MAIN_PAGE: Displays the main page (main.ejs) and retrieves books from books.json.
+CREATE_BOOK: Manages the creation of new books, ensuring no duplicates are added to books.json.
+UPDATE_BOOK: Modifies existing books based on their IDs, updating the information stored in books.json.
+DELETE_BOOK: Removes books based on their IDs, updating books.json accordingly.
 - Middleware
 This directory hosts error handling and validation middleware crucial for maintaining the application's reliability and security.
 - Database
-groups.json: Contains an array for interacting with data stored in groups.json, handling data persistence and retrieval.
+  books.json: Contains an array for interacting with data stored in books.json, handling data persistence and retrieval.
 - Public
 Stores static files (e.g., CSS, JavaScript) used in EJS views.
 - Routing
 routes.js: Defines the application's routes, mapping specific controller functions to handle each route.
 - Schema
-creator.schema.js: Houses Joi schemas for validating group creation requests, leveraging Joi
+creator.schema.js: Houses Joi schemas for validating book creation requests, leveraging Joi
 - Additional Helpers
-helpers: Contains helper functions facilitating read and write operations on groups.json.
+helpers: Contains helper functions facilitating read and write operations on books.json.
 - User Interface
 views: Stores the view template (main.ejs) responsible for rendering the main list interface, serving as the presentation layer of the application.
 - Main Root File
