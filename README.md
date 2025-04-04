@@ -15,8 +15,10 @@ This application is a simple manager list for books, built using Node.js and Exp
 
 4. Start the server:
     npm run start or npm run start:watch for watching environment
-    it will run http://localhost:9000/api/main this page
+    
 
+5. To test the API, open an endpoint like
+https://bookreviewcoursework-1.onrender.com/api/main in your browser or Postman.
 
 
 ## Application Dependencies:
