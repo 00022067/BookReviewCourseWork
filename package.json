@@ -2,8 +2,11 @@
   "name": "group-creater",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/main.js",
   "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start:watch": "node --watch ./src/main.js",
     "start": "node ./src/main.js"
