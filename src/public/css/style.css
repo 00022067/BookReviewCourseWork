@@ -79,6 +79,7 @@ section button {
     cursor: pointer;
     align-self: end;
     transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
 }
 
 section button:hover {
