@@ -51,6 +51,19 @@ export default {
             res.redirect("/api/main");
         }
     },
+    DELETE_BOOK: (req, res) => {
+        const { id } = req.params;
+        const allBooks = readFileCustom("books.json");
+        const bookIndex = allBooks.findIndex((book) => book.id == id);
+
+        if (bookIndex === -1) {
+            return res.status(404).json({ message: "Book not found" });
+        } else {
+            allBooks.splice(bookIndex, 1);
+            writeFileCustom("books.json", allBooks);
+            res.redirect("/api/main");
+        }
+    }
 
     
 };
