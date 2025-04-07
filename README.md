@@ -5,10 +5,10 @@ This application is a simple manager list for books, built using Node.js and Exp
 
 ## Run app step by step:
 1. Clone repository:
-    git clone   ////////git repo link
+    git clone  https://github.com/00022067/BookReviewCourseWork
 
 2. Navigate project:
-    cd  //// name of project   main-list-app
+    cd   name of project   main-list-app
 
 3. Install dependencies by running:
     npm install
@@ -59,3 +59,6 @@ helpers: Contains helper functions facilitating read and write operations on boo
 views: Stores the view template (main.ejs) responsible for rendering the main list interface, serving as the presentation layer of the application.
 - Main Root File
 main.js: Contains JavaScript code enhancing the functionality of the server as a whole.
+
+
+Github Account: https://github.com/00022067/BookReviewCourseWork in here every push and commits showed properly you can clone it
